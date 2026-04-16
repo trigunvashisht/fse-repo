@@ -4,14 +4,16 @@ on: push
 
 jobs:
   say-hello:
-    runs-on: ubuntu-latest
-  say-bye:
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu-latest 
 
     steps:
       - name: Print message
         run: echo "Hello,Github Actions!"
       - name: print Name
         run: echo "Trigun"
+
+  say-bye:
+    runs-on: ubuntu-latest  
+    steps:
       - name: print goodbye message
         run: echo "Goodbye"
