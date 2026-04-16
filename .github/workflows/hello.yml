@@ -5,7 +5,6 @@ on: push
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-jobs:
   say-bye:
     runs-on: ubuntu-latest   
 
@@ -14,6 +13,5 @@ jobs:
         run: echo "Hello,Github Actions!"
       - name: print Name
         run: echo "Trigun"
-    steps:
       - name: print goodbye message
         run: echo "Goodbye"
