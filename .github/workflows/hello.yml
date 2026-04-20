@@ -14,7 +14,7 @@ jobs:
 
   say-bye:
     runs-on: ubuntu-latest  
-    needs:say-hello
+    needs: say-hello
     if: false
     steps:
       - name: print goodbye message
