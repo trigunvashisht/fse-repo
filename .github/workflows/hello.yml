@@ -7,10 +7,11 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps:
-      - name: Print message
-        run: echo "Hello,Github Actions!"
+      - name: Checkout code
+        uses:action/checkout@v4
+        # run: echo "Hello,Github Actions!"
       - name: print Name
-        run: echo "Trigun"
+        # run: echo "Trigun"
 
   say-bye:
     runs-on: ubuntu-latest  
@@ -18,4 +19,5 @@ jobs:
     if: false
     steps:
       - name: print goodbye message
-        run: echo "Goodbye"
+        uses:action/checkout@v4
+        # run: echo "Goodbye"
