@@ -27,7 +27,7 @@ jobs:
 
   say-job2:
     runs-on: ubuntu-latest  
-    needs: say-hello
+    needs: say-job1
 
     steps:
       - name: Print Goodbye
