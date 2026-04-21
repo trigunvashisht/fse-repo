@@ -9,14 +9,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: setup node
+        
+      - name: Setup Node
         uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
       - name: Check Node version
-        run: node -v  
+        run: node -v
 
-      - name: list file
+      - name: List files
         run: ls
 
       - name: Print Name
@@ -27,8 +29,5 @@ jobs:
     needs: say-hello
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Print Goodbye
         run: echo "Goodbye"
